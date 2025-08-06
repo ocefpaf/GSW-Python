@@ -1,21 +1,21 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Geostrophy &mdash; gsw 0.1.dev1+g55754ac documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <title>Geostrophy &mdash; gsw 0.1.dev511+g2da2084 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=657c389e"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -28,14 +28,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> gsw
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            gsw
           </a>
-              <div class="version">
-                0.1.dev1+g55754ac
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -71,9 +72,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="gsw.html">Subpackages</a> &raquo;</li>
-      <li>Geostrophy</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="gsw.html">Subpackages</a></li>
+      <li class="breadcrumb-item active">Geostrophy</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/geostrophy.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -84,14 +85,14 @@
            <div itemprop="articleBody">
              
   <section id="geostrophy">
-<h1>Geostrophy<a class="headerlink" href="#geostrophy" title="Permalink to this heading"></a></h1>
+<h1>Geostrophy<a class="headerlink" href="#geostrophy" title="Link to this heading"></a></h1>
 <p>Functions for calculating geostrophic currents.</p>
 <dl class="py function">
 <dt class="sig sig-object py">
 <span class="sig-prename descclassname"><span class="pre">gsw.geostrophy.</span></span><span class="sig-name descname"><span class="pre">distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gsw/geostrophy.html#distance"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Great-circle distance in m between lon, lat points.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>lon, lat</strong><span class="classifier">array-like, 1-D or 2-D (shapes must match)</span></dt><dd><p>Longitude, latitude, in degrees.</p>
 </dd>
@@ -103,7 +104,7 @@ dimension along which p increases.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>distance</strong><span class="classifier">1-D or 2-D array</span></dt><dd><p>distance in meters between adjacent points.</p>
 </dd>
@@ -123,7 +124,7 @@ dimension along which p increases.</p>
 <span class="sig-prename descclassname"><span class="pre">gsw.geostrophy.</span></span><span class="sig-name descname"><span class="pre">geo_strf_dyn_height</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_ref</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interp_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pchip'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gsw/geostrophy.html#geo_strf_dyn_height"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Dynamic height anomaly as a function of pressure.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>SA</strong><span class="classifier">array-like</span></dt><dd><p>Absolute Salinity, g/kg</p>
 </dd>
@@ -139,11 +140,11 @@ dimension along which p increases.</p>
 height will be calculated after interpolating to a grid with this
 spacing.</p>
 </dd>
-<dt><strong>interp_method</strong><span class="classifier">string {‘pchip’, ‘linear’}</span></dt><dd><p>Interpolation algorithm.</p>
+<dt><strong>interp_method</strong><span class="classifier">string {‘mrst’, ‘pchip’, ‘linear’}</span></dt><dd><p>Interpolation algorithm.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>dynamic_height</strong><span class="classifier">array</span></dt><dd><p>This is the integral of specific volume anomaly with respect
 to pressure, from each pressure in p to the specified
@@ -164,7 +165,7 @@ given a geostrophic streamfunction and the position of each station
 in sequence along an ocean section.  The data can be from a single
 isobaric or “density” surface, or from a series of such surfaces.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>geo_strf</strong><span class="classifier">array-like, 1-D or 2-D</span></dt><dd><p>geostrophic streamfunction; see Notes below.</p>
 </dd>
@@ -181,7 +182,7 @@ If geo_strf is 1-D, it is ignored.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>velocity</strong><span class="classifier">array, 2-D or 1-D</span></dt><dd><p>Geostrophic velocity in m/s relative to the sea surface,
 averaged between each successive pair of positions.</p>
